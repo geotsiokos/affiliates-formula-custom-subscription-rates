@@ -2,6 +2,7 @@
 An example of setting different rates to affiliates commissions on subscriptions, depending on whether it is a subscription's original order or a renewal.
 The formula used in rate should be 'c * s' or 'c * t' and the values for the c variable can be set with the following hook:
 
+<pre>
 add_filter( 'affiliates_formula_variable_crates', 'example_affiliates_formula_variable_crates' );
 
 function example_affiliates_formula_variable_crates( $rates ) {
@@ -15,3 +16,4 @@ function example_affiliates_formula_variable_crates( $rates ) {
 	return $rates;
 	
 }
+</pre>
