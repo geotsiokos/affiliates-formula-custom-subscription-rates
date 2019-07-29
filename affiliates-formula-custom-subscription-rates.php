@@ -79,6 +79,7 @@ class Affiliates_Formula_Custom_Subscription_Rates {
 		$rates['high_rate'] = 0.10;
 		return apply_filters( 'affiliates_formula_variable_crates', $rates );
 	}
+
 	/**
 	 * Retrieve an order.
 	 *
