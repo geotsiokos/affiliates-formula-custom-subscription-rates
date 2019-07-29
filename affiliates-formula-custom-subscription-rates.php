@@ -9,6 +9,10 @@
  * License: GPLv3
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 class Affiliates_Formula_Custom_Subscription_Rates {
 
 	/**
