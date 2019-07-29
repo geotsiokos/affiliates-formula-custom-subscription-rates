@@ -48,7 +48,10 @@ class Affiliates_Formula_Custom_Subscription_Rates {
 		}
 
 		if ( $product_id ) {
-			if ( !method_exists( 'WC_Subscriptions_Product', 'is_subscription' ) ) {
+			if (
+				!method_exists( 'WC_Subscriptions_Product', 'is_subscription' ) ||
+				!function_exists( 'wcs_order_contains_renewal' )
+			) {
 				require_once( ABSPATH . 'wp-content/plugins/woocommerce-subscriptions/woocommerce-subscriptions.php' );
 			}
 
